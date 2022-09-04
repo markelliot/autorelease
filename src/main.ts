@@ -61,7 +61,7 @@ async function run(): Promise<void> {
 
     const newTag = `${releaseComponents[1]}.${
       parseInt(releaseComponents[2]) + 1
-    }.0}`;
+    }.0`;
     core.info(`Creating a new release ${newTag}`);
     await octokit.rest.repos.createRelease({
       ...context.repo,

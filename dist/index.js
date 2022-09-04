@@ -71,7 +71,7 @@ async function run() {
             core.warning("Skipping release because it has not been long enough between releases");
             return;
         }
-        const newTag = `${releaseComponents[1]}.${parseInt(releaseComponents[2]) + 1}.0}`;
+        const newTag = `${releaseComponents[1]}.${parseInt(releaseComponents[2]) + 1}.0`;
         core.info(`Creating a new release ${newTag}`);
         await octokit.rest.repos.createRelease({
             ...context.repo,
