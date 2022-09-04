@@ -1,5 +1,8 @@
 name: markelliot/autorelease action
 description: Automatically release changes since last release
+branding:
+  icon: arrow-up-circle
+  color: blue
 author: markelliot
 inputs:
   github-token:
