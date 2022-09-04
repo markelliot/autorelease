@@ -1,4 +1,4 @@
-name: autorelease
+name: markelliot/autorelease action
 description: Automatically release changes since last release
 author: markelliot
 inputs:
