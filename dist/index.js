@@ -49,8 +49,8 @@ async function run() {
             core.warning("Unable to perform an autorelease if there are no prior releases.");
             return;
         }
-        const releaseAge = (Date.now() - Date.parse(latestRelease.data.created_at)) /
-            MILLISECONDS_PER_DAY;
+        const releaseAge = Math.floor((Date.now() - Date.parse(latestRelease.data.created_at)) /
+            MILLISECONDS_PER_DAY);
         core.info(`Found latest release ${latestRelease.data.tag_name} from ${releaseAge} days ago`);
         const releaseComponents = latestRelease.data.tag_name.match(RELEASE_STYLE);
         if (releaseComponents === null) {
@@ -60,23 +60,25 @@ async function run() {
         // check that there have been changes since last release
         const commitsSinceLastRelease = await octokit.rest.repos.listCommits({
             ...context.repo,
-            since: latestRelease.data.tag_name,
+            sha: latestRelease.data.target_commitish,
         });
         if (commitsSinceLastRelease.data === undefined ||
             commitsSinceLastRelease.data.length < 1) {
             core.warning("No commits since last release");
             return;
         }
-        if (releaseAge >= maxDays) {
-            const newTag = `${releaseComponents[1]}.${parseInt(releaseComponents[2]) + 1}.0}`;
-            core.info(`Creating a new release ${newTag}`);
-            await octokit.rest.repos.createRelease({
-                ...context.repo,
-                tag_name: newTag,
-                name: newTag,
-                generate_release_notes: true,
-            });
+        if (releaseAge < maxDays) {
+            core.warning("Skipping release because it has not been long enough between releases");
+            return;
         }
+        const newTag = `${releaseComponents[1]}.${parseInt(releaseComponents[2]) + 1}.0}`;
+        core.info(`Creating a new release ${newTag}`);
+        await octokit.rest.repos.createRelease({
+            ...context.repo,
+            tag_name: newTag,
+            name: newTag,
+            generate_release_notes: true,
+        });
     }
     catch (error) {
         if (error instanceof Error) {
