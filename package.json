@@ -9,7 +9,7 @@
     "build": "yarn && yarn lint && yarn tsc",
     "format": "yarn eslint 'src/' --fix && prettier --write 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
     "lint": "yarn eslint 'src/' && prettier --check 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
-    "test": "yarn jest"
+    "test": "yarn jest --passWithNoTests"
   },
   "devDependencies": {
     "@types/jest": "^28.1.7",
