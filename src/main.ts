@@ -42,11 +42,11 @@ async function run(): Promise<void> {
     // check that there have been changes since last release
     const commitsSinceLastRelease = await octokit.rest.repos.listCommits({
       ...context.repo,
-      sha: latestRelease.data.target_commitish,
+      since: latestRelease.data.created_at,
     });
     if (
       commitsSinceLastRelease.data === undefined ||
-      commitsSinceLastRelease.data.length < 1
+      commitsSinceLastRelease.data.length < 2 // first commit is the latest
     ) {
       core.warning("No commits since last release");
       return;
