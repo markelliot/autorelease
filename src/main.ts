@@ -51,6 +51,18 @@ async function run(): Promise<void> {
       core.warning("No commits since last release");
       return;
     }
+    core.info(
+      `Found ${
+        commitsSinceLastRelease.data.length - 1
+      } commits since latest release:\n${commitsSinceLastRelease.data.map(
+        (commit) =>
+          commit.commit.committer?.date +
+          " " +
+          commit.sha +
+          " " +
+          commit.commit.message
+      )}`
+    );
 
     if (releaseAge < maxDays) {
       core.warning(
