@@ -1,0 +1,16 @@
+name: markelliot/autorelease action
+description: Automatically release changes since last release
+branding:
+  icon: arrow-up-circle
+  color: blue
+author: markelliot
+inputs:
+  github-token:
+    required: true
+    description: A valid GitHub token
+  max-days:
+    required: true
+    description: The maximum number of days since the last release
+runs:
+  using: "node16"
+  main: "dist/index.js"
