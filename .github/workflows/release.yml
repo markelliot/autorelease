@@ -30,7 +30,7 @@ jobs:
           git checkout -f "${BRANCH}"
           mv dist/action.yml action.yml
           mv dist/.gitignore .gitignore
-          git add -f dist action.yml
+          git add -f dist action.yml .gitignore
           git commit --allow-empty -m "${MESSAGE}"
           git push origin "${BRANCH}"
           git tag -f -a "${TAG}" -m "${TAG}"
