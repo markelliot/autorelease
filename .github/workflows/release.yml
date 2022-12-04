@@ -1,0 +1,43 @@
+name: Release
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "yarn"
+      - name: Install
+        run: yarn
+      - name: Build
+        run: yarn package
+      - name: Push to release branch
+        shell: bash
+        run: |
+          git config --global user.email "${COMMIT_EMAIL}"
+          git config --global user.name "${COMMIT_USER}"
+
+          cp action.yml dist
+          cp .gitignore dist
+          git checkout -f "${BRANCH}"
+          mv dist/action.yml action.yml
+          mv dist/.gitignore .gitignore
+          git add -f dist action.yml
+          git commit --allow-empty -m "${MESSAGE}"
+          git push origin "${BRANCH}"
+          git tag -f -a "${TAG}" -m "${TAG}"
+          git push -f --tags
+        env:
+          COMMIT_USER: mellbot
+          COMMIT_EMAIL: "mellbot@users.noreply.github.com"
+          MESSAGE: "Release of changes in ${{ github.sha }}"
+          BRANCH: release
+          TAG: v1
