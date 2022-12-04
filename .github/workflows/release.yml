@@ -40,4 +40,4 @@ jobs:
           COMMIT_EMAIL: "mellbot@users.noreply.github.com"
           MESSAGE: "Release of changes in ${{ github.sha }}"
           BRANCH: release
-          TAG: v1
+          TAG: v2

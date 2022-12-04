@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: autorelease
-        uses: markelliot/autorelease@v1
+        uses: markelliot/autorelease@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # maximum number of days since last release
