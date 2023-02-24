@@ -2025,9 +2025,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.284":
-  version: 1.4.308
-  resolution: "electron-to-chromium@npm:1.4.308"
-  checksum: 6e49a6c0e0ae2c4be3d5acd76ba6d497383a1ceb224cada6cdbba83aa95952336f96aa742cbf3697dd39d091624b53a912c0015fe5a30a8d6138e14287a0a9ad
+  version: 1.4.310
+  resolution: "electron-to-chromium@npm:1.4.310"
+  checksum: f7d070b36c2cf8e085a2aaca85a92f451657d39cd9e1e779f9e37e40c65039abd10807836e017b0ce813e0bb2e9f125a6401181f80182acd0b265734c857266a
   languageName: node
   linkType: hard
 
@@ -4129,9 +4129,9 @@ __metadata:
   linkType: hard
 
 "minipass@npm:^4.0.0":
-  version: 4.2.0
-  resolution: "minipass@npm:4.2.0"
-  checksum: 3c3ce269eacdcecb56b5dfe4bb4ab905d60fea1af4c967c7ed54baadfdd4af03e4d926567fb655957504fb4c9e2e7adbb2dc636927dfb56c829f2b25f1b2b3dd
+  version: 4.2.1
+  resolution: "minipass@npm:4.2.1"
+  checksum: 727641018e2b2dcd8fb6239b9220b4f0ef1b43d279dcb7f53840f7c43d005a36f0cdcfe2ffbc18ce32fae2ea484d3e7d3cb29cbe99c9274b0365bbb74661266c
   languageName: node
   linkType: hard
 
