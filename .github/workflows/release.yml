@@ -36,8 +36,8 @@ jobs:
           git tag -f -a "${TAG}" -m "${TAG}"
           git push -f --tags
         env:
-          COMMIT_USER: mellbot
-          COMMIT_EMAIL: "mellbot@users.noreply.github.com"
+          COMMIT_USER: melliotbot[bot]
+          COMMIT_EMAIL: "melliotbot[bot]@users.noreply.github.com"
           MESSAGE: "Release of changes in ${{ github.sha }}"
           BRANCH: release
           TAG: v2
