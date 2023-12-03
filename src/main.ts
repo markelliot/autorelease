@@ -11,7 +11,7 @@ const RELEASE_STYLE = /^(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$/;
 export async function work(
   octokit: InstanceType<typeof GitHub>,
   maxDays: number,
-  dryRun: boolean
+  dryRun: boolean,
 ) {
   const context = github.context;
 
@@ -20,22 +20,22 @@ export async function work(
   });
   if (latestRelease.data === undefined) {
     core.warning(
-      "Unable to perform an autorelease if there are no prior releases."
+      "Unable to perform an autorelease if there are no prior releases.",
     );
     return;
   }
   const releaseAge = Math.floor(
     (Date.now() - Date.parse(latestRelease.data.created_at)) /
-      MILLISECONDS_PER_DAY
+      MILLISECONDS_PER_DAY,
   );
   core.info(
-    `Found latest release ${latestRelease.data.tag_name} from ${releaseAge} days ago`
+    `Found latest release ${latestRelease.data.tag_name} from ${releaseAge} days ago`,
   );
 
   const releaseComponents = latestRelease.data.tag_name.match(RELEASE_STYLE);
   if (releaseComponents === null) {
     core.warning(
-      `Unable to perform an autorelease because last release does not match required tag pattern <major>.<minor>.<patch> (${latestRelease.data.tag_name})`
+      `Unable to perform an autorelease because last release does not match required tag pattern <major>.<minor>.<patch> (${latestRelease.data.tag_name})`,
     );
     return;
   }
@@ -65,14 +65,14 @@ export async function work(
             " " +
             commit.sha +
             " " +
-            commit.commit.message.split("\n")[0]
+            commit.commit.message.split("\n")[0],
         )
-        .join("\n")
+        .join("\n"),
   );
 
   if (releaseAge < maxDays) {
     core.warning(
-      "Skipping release because it has not been long enough between releases"
+      "Skipping release because it has not been long enough between releases",
     );
     return;
   }
