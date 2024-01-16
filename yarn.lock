@@ -1763,9 +1763,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001565":
-  version: 1.0.30001576
-  resolution: "caniuse-lite@npm:1.0.30001576"
-  checksum: b8b332675fe703d5e57b02df5f100345f2a3796c537a42422f5bfc82d3256b8bad3f4e2788553656d2650006d13a4b5db99725e2a9462cc0c8035ba494ba1857
+  version: 1.0.30001577
+  resolution: "caniuse-lite@npm:1.0.30001577"
+  checksum: 26d2b4a498a2a6ad5a33c44c18a32497b59a3bb1963b8b9221ddcbfe166ed7f7a1f75a3de040870cdc2467ce35199c643cfe8c45e7208d8bc033e7877214b0f9
   languageName: node
   linkType: hard
 
@@ -2049,9 +2049,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.601":
-  version: 1.4.630
-  resolution: "electron-to-chromium@npm:1.4.630"
-  checksum: 9bf16b06b245d6937845bbef17c0babdf8e01845c8aa31eb2d7dc3a88cd34291d2dec0d8e329450a5b8dfcf5d3dc96c56aa1c8b224d942e3b1d508e9e3cb9788
+  version: 1.4.632
+  resolution: "electron-to-chromium@npm:1.4.632"
+  checksum: 01ebe22e9a28eaf6e4a89ca1f5f3a46bd337226033651de09e542dd36904f9748389758e0e2819459ec07964baa8208a70a68c8676a527ae5a457531da85be57
   languageName: node
   linkType: hard
 
@@ -4645,14 +4645,14 @@ __metadata:
   linkType: hard
 
 "safe-array-concat@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "safe-array-concat@npm:1.0.1"
+  version: 1.1.0
+  resolution: "safe-array-concat@npm:1.1.0"
   dependencies:
-    call-bind: ^1.0.2
-    get-intrinsic: ^1.2.1
+    call-bind: ^1.0.5
+    get-intrinsic: ^1.2.2
     has-symbols: ^1.0.3
     isarray: ^2.0.5
-  checksum: 001ecf1d8af398251cbfabaf30ed66e3855127fbceee178179524b24160b49d15442f94ed6c0db0b2e796da76bb05b73bf3cc241490ec9c2b741b41d33058581
+  checksum: 5c71eaa999168ee7474929f1cd3aae80f486353a651a094d9968936692cf90aa065224929a6486dcda66334a27dce4250a83612f9e0fef6dced1a925d3ac7296
   languageName: node
   linkType: hard
 
