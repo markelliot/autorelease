@@ -1541,7 +1541,7 @@ __metadata:
     eslint-plugin-prettier: ^5.1.3
     jest: ^29.7.0
     prettier: ^3.2.4
-    ts-jest: ^29.1.1
+    ts-jest: ^29.1.2
     typescript: ^5.3.3
   languageName: unknown
   linkType: soft
@@ -2049,9 +2049,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.601":
-  version: 1.4.640
-  resolution: "electron-to-chromium@npm:1.4.640"
-  checksum: 021b8da324b2e574ffd9cd6943a74f8116d1947dbd4a43c89025594c469e18f2437b2b354363528dbc822538f510137c6ae315bce9b94b1d1f6e5d1c9cd302ef
+  version: 1.4.642
+  resolution: "electron-to-chromium@npm:1.4.642"
+  checksum: 18b729cf672e8663706998683034acc70fe3fccaff8efb70324a0b2e2a1c021fb670cf1061944d2ec7b5cf2dca8f443403942d9fecf53c333debee47e0cd1f90
   languageName: node
   linkType: hard
 
@@ -5062,9 +5062,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.1.1":
-  version: 29.1.1
-  resolution: "ts-jest@npm:29.1.1"
+"ts-jest@npm:^29.1.2":
+  version: 29.1.2
+  resolution: "ts-jest@npm:29.1.2"
   dependencies:
     bs-logger: 0.x
     fast-json-stable-stringify: 2.x
@@ -5091,7 +5091,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: a8c9e284ed4f819526749f6e4dc6421ec666f20ab44d31b0f02b4ed979975f7580b18aea4813172d43e39b29464a71899f8893dd29b06b4a351a3af8ba47b402
+  checksum: a0ce0affc1b716c78c9ab55837829c42cb04b753d174a5c796bb1ddf9f0379fc20647b76fbe30edb30d9b23181908138d6b4c51ef2ae5e187b66635c295cefd5
   languageName: node
   linkType: hard
 
