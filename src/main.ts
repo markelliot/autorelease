@@ -109,7 +109,7 @@ export async function work(
         ...context.repo,
         ref: `refs/tags/${newTag}`,
         sha: latestCommit,
-      })
+      });
     } catch (error) {
       core.error("Failed to create tag:\n${error}");
     }
