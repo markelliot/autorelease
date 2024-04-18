@@ -16,5 +16,5 @@ inputs:
     default: false
     description: When true, create a tag instead of a release
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.js"
