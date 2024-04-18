@@ -11,6 +11,10 @@ inputs:
   max-days:
     required: true
     description: The maximum number of days since the last release
+  tag-only:
+    required: false
+    default: false
+    description: When true, create a tag instead of a release
 runs:
   using: "node16"
   main: "dist/index.js"
