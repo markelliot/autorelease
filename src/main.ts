@@ -93,7 +93,7 @@ export async function work(
       generate_release_notes: true,
     });
     if (result.status != 201) {
-      core.error("Failed to create release:\n" + result.data.message);
+      core.error("Failed to create release:\n" + JSON.stringify(result));
     }
   } else {
     core.info(`Creating a new tag ${newTag}`);
@@ -105,7 +105,7 @@ export async function work(
       object: latestCommit,
     });
     if (result.status != 201) {
-      core.error("Failed to create tag:\n" + result.data.message);
+      core.error("Failed to create tag:\n" + JSON.stringify(result));
     }
   }
 }
