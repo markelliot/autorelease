@@ -6,11 +6,12 @@ import { GitHub } from "@actions/github/lib/utils";
 const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
 
 // compatible with releases of the form <major>.<minor>.<patch>
-const RELEASE_STYLE = /^(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$/;
+const RELEASE_STYLE = /^(?<v>v?)(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$/;
 
 export async function work(
   octokit: InstanceType<typeof GitHub>,
   maxDays: number,
+  tagOnly: boolean,
   dryRun: boolean,
 ) {
   const context = github.context;
@@ -77,17 +78,25 @@ export async function work(
     return;
   }
 
-  const newTag = `${releaseComponents[1]}.${
-    parseInt(releaseComponents[2]) + 1
-  }.0`;
+  const newTag = `${releaseComponents[1]}${releaseComponents[2]}.${parseInt(releaseComponents[3]) + 1}.0`;
   core.info(`Creating a new release ${newTag}`);
   if (!dryRun) {
-    await octokit.rest.repos.createRelease({
-      ...context.repo,
-      tag_name: newTag,
-      name: newTag,
-      generate_release_notes: true,
-    });
+    if (!tagOnly) {
+      await octokit.rest.repos.createRelease({
+        ...context.repo,
+        tag_name: newTag,
+        name: newTag,
+        generate_release_notes: true,
+      });
+    } else {
+      await octokit.rest.git.createTag({
+        ...context.repo,
+        tag: newTag,
+        message: newTag,
+        type: "commit",
+        object: github.context.sha,
+      });
+    }
   }
 }
 
@@ -96,8 +105,9 @@ async function run(): Promise<void> {
   try {
     const authToken = core.getInput("github-token");
     const maxDays = parseInt(core.getInput("max-days"));
+    const tagOnly = core.getInput("tag-only") === "true";
     const octokit = github.getOctokit(authToken);
-    work(octokit, maxDays, false);
+    work(octokit, maxDays, tagOnly, false);
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);

@@ -23,9 +23,10 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # maximum number of days since last release
           max-days: 7
+          # tag-only: true # create a tag instead of a release
 ```
 
 Note
 
-- This action works when the versioning scheme matches the pattern `^\d+\.\d+\.\d+$`.
+- This action works when the versioning scheme matches the pattern `^v?\d+\.\d+\.\d+$`.
 - A new release will only be created if there exists at least one prior release and there have been commits since the last release.
