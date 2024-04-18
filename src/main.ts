@@ -98,7 +98,7 @@ export async function work(
   } else {
     core.info(`Creating a new tag ${newTag}`);
     try {
-      const result = await octokit.rest.git.createTag({
+      await octokit.rest.git.createTag({
         ...context.repo,
         tag: newTag,
         message: newTag,
