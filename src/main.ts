@@ -97,7 +97,7 @@ export async function work(
         object: github.context.sha,
       });
       if (result.status != 201) {
-        core.error("Failed to create tag:\n" + result.data.message)
+        core.error("Failed to create tag:\n" + result.data.message);
       }
     }
   }
