@@ -97,15 +97,16 @@ export async function work(
     }
   } else {
     core.info(`Creating a new tag ${newTag}`);
-    const result = await octokit.rest.git.createTag({
-      ...context.repo,
-      tag: newTag,
-      message: newTag,
-      type: "commit",
-      object: latestCommit,
-    });
-    if (result.status != 201) {
-      core.error("Failed to create tag:\n" + JSON.stringify(result));
+    try {
+      await octokit.rest.git.createTag({
+        ...context.repo,
+        tag: newTag,
+        message: newTag,
+        type: "commit",
+        object: latestCommit,
+      });
+    } catch (error) {
+      core.error("Failed to create tag:\n" + JSON.stringify(error));
     }
   }
 }
@@ -121,6 +122,10 @@ async function run(): Promise<void> {
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);
+    } else {
+      core.setFailed(
+        "Encountered an unexpected error:\n" + JSON.stringify(error),
+      );
     }
   }
 }
