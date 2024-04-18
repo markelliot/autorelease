@@ -78,32 +78,39 @@ async function work(octokit, maxDays, tagOnly, dryRun) {
                 commit.commit.message.split("\n")[0];
         })
             .join("\n"));
+    const latestCommit = commitsSinceLastRelease.data[0].sha;
     if (releaseAge < maxDays) {
         core.warning("Skipping release because it has not been long enough between releases");
         return;
     }
     const newTag = `${releaseComponents[1]}${releaseComponents[2]}.${parseInt(releaseComponents[3]) + 1}.0`;
-    core.info(`Creating a new release ${newTag}`);
-    if (!dryRun) {
-        if (!tagOnly) {
-            await octokit.rest.repos.createRelease({
-                ...context.repo,
-                tag_name: newTag,
-                name: newTag,
-                generate_release_notes: true,
-            });
+    if (dryRun) {
+        core.info("Running in dryRun mode, skipping release creation.");
+        return;
+    }
+    if (!tagOnly) {
+        core.info(`Creating a new release ${newTag}`);
+        const result = await octokit.rest.repos.createRelease({
+            ...context.repo,
+            tag_name: newTag,
+            name: newTag,
+            generate_release_notes: true,
+        });
+        if (result.status != 201) {
+            core.error("Failed to create release:\n" + JSON.stringify(result));
         }
-        else {
-            const result = await octokit.rest.git.createTag({
-                ...context.repo,
-                tag: newTag,
-                message: newTag,
-                type: "commit",
-                object: github.context.sha,
-            });
-            if (result.status != 201) {
-                core.error("Failed to create tag:\n" + result.data.message);
-            }
+    }
+    else {
+        core.info(`Creating a new tag ${newTag}`);
+        const result = await octokit.rest.git.createTag({
+            ...context.repo,
+            tag: newTag,
+            message: newTag,
+            type: "commit",
+            object: latestCommit,
+        });
+        if (result.status != 201) {
+            core.error("Failed to create tag:\n" + JSON.stringify(result));
         }
     }
 }
