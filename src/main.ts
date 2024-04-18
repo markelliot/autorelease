@@ -105,7 +105,7 @@ export async function work(
         type: "commit",
         object: latestCommit,
       });
-    } catch(error) {
+    } catch (error) {
       core.error("Failed to create tag:\n" + JSON.stringify(error));
     }
   }
@@ -123,7 +123,9 @@ async function run(): Promise<void> {
     if (error instanceof Error) {
       core.setFailed(error.message);
     } else {
-      core.setFailed("Encountered an unexpected error:\n" + JSON.stringify(error));
+      core.setFailed(
+        "Encountered an unexpected error:\n" + JSON.stringify(error),
+      );
     }
   }
 }
