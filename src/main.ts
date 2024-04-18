@@ -89,13 +89,16 @@ export async function work(
         generate_release_notes: true,
       });
     } else {
-      await octokit.rest.git.createTag({
+      const result = await octokit.rest.git.createTag({
         ...context.repo,
         tag: newTag,
         message: newTag,
         type: "commit",
         object: github.context.sha,
       });
+      if (result.status != 201) {
+        core.error("Failed to create tag:\n" + result.data.message)
+      }
     }
   }
 }
