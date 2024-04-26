@@ -2015,9 +2015,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.748
-  resolution: "electron-to-chromium@npm:1.4.748"
-  checksum: ffd29b36b698923e3d5f839f735cba3436569f85246099a8df8ad933f8d3fa0c2187de71f99c8f9c6f0bd6d5cb49b7058cd8b702fd8573b2d3c835e7939446e2
+  version: 1.4.749
+  resolution: "electron-to-chromium@npm:1.4.749"
+  checksum: 30bffd43cf198c3b71afa0696da6ce37b31dad789419580d90cd086bb935b4894c6aa153a1dd37d8d379c845a1a8b3abe6aba89e0dc71082d0f032fb7351a045
   languageName: node
   linkType: hard
 
@@ -3494,9 +3494,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "lru-cache@npm:10.2.0"
-  checksum: eee7ddda4a7475deac51ac81d7dd78709095c6fa46e8350dc2d22462559a1faa3b81ed931d5464b13d48cbd7e08b46100b6f768c76833912bc444b99c37e25db
+  version: 10.2.1
+  resolution: "lru-cache@npm:10.2.1"
+  checksum: ae81586eaeb92389fc9a05790d7efd424a29334daa4e513196d6e138a069d0afad1738cfa67773f05b9cb8666fb076f8af88a1b5cc4c7e569202f18a0c032a35
   languageName: node
   linkType: hard
 
@@ -4051,9 +4051,9 @@ __metadata:
   linkType: hard
 
 "react-is@npm:^18.0.0":
-  version: 18.2.0
-  resolution: "react-is@npm:18.2.0"
-  checksum: e72d0ba81b5922759e4aff17e0252bd29988f9642ed817f56b25a3e217e13eea8a7f2322af99a06edb779da12d5d636e9fda473d620df9a3da0df2a74141d53e
+  version: 18.3.0
+  resolution: "react-is@npm:18.3.0"
+  checksum: 97a920d66547984632965458ca3951b23800e0258cb1b4aaeafc0f40f6f37c5fae00ec27fbb8b03f2b9d53505eb67e7c55d9e2254b42920cedc307230cdd2c5c
   languageName: node
   linkType: hard
 
