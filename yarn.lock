@@ -1404,11 +1404,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.11.3":
-  version: 8.11.3
-  resolution: "acorn@npm:8.11.3"
+  version: 8.12.0
+  resolution: "acorn@npm:8.12.0"
   bin:
     acorn: bin/acorn
-  checksum: 76d8e7d559512566b43ab4aadc374f11f563f0a9e21626dd59cb2888444e9445923ae9f3699972767f18af61df89cd89f5eaaf772d1327b055b45cb829b4a88c
+  checksum: ae142de8739ef15a5d936c550c1d267fc4dedcdbe62ad1aa2c0009afed1de84dd0a584684a5d200bb55d8db14f3e09a95c6e92a5303973c04b9a7413c36d1df0
   languageName: node
   linkType: hard
 
@@ -1752,9 +1752,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001629":
-  version: 1.0.30001633
-  resolution: "caniuse-lite@npm:1.0.30001633"
-  checksum: 718607f5d335ed26a469b03aaf059aec3352d81d6a974888122310d76c29ff0820e9bf57f16a1eb65693f8cef405e3a18a6257591ee1e5642865a4cb1a27cd4c
+  version: 1.0.30001634
+  resolution: "caniuse-lite@npm:1.0.30001634"
+  checksum: 5ab273ec36fee64b148bee8a84e758eb22cc282cce9af41eb0d36a0cdd2b90ff96ba502be89aaf0448b3153cd100629acac94971bb5cb9016f6c5ccbeda944b2
   languageName: node
   linkType: hard
 
