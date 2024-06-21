@@ -30,7 +30,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.work = void 0;
+exports.work = work;
 const core = __importStar(__nccwpck_require__(2186));
 const github = __importStar(__nccwpck_require__(5438));
 // milliseconds/second * seconds/minute * minutes/hour * hours/day = mlliseconds/day
@@ -121,7 +121,6 @@ async function work(octokit, maxDays, tagOnly, dryRun) {
         }
     }
 }
-exports.work = work;
 // map action parameters to useful work
 async function run() {
     try {
