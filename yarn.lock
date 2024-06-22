@@ -1989,9 +1989,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.796":
-  version: 1.4.808
-  resolution: "electron-to-chromium@npm:1.4.808"
-  checksum: 2da5e1644b4172762aa75760d8413b22389763e4730b1e6367e5a26c5d573c1ab6c99da12a4d29f4287a4d0a4345dd26ebc8b089a04acf06543fda1f3ee0df24
+  version: 1.4.810
+  resolution: "electron-to-chromium@npm:1.4.810"
+  checksum: a7c13bec90b6a617183bb5420538f6692b6e2aed83d023ef5815858b5a6008daeeca62c9a9809a52059c0e88eeaae87306b38e7b9ea7d0d7e0769e51af50022e
   languageName: node
   linkType: hard
 
@@ -4632,13 +4632,13 @@ __metadata:
   linkType: hard
 
 "v8-to-istanbul@npm:^9.0.1":
-  version: 9.2.0
-  resolution: "v8-to-istanbul@npm:9.2.0"
+  version: 9.3.0
+  resolution: "v8-to-istanbul@npm:9.3.0"
   dependencies:
     "@jridgewell/trace-mapping": ^0.3.12
     "@types/istanbul-lib-coverage": ^2.0.1
     convert-source-map: ^2.0.0
-  checksum: 31ef98c6a31b1dab6be024cf914f235408cd4c0dc56a5c744a5eea1a9e019ba279e1b6f90d695b78c3186feed391ed492380ccf095009e2eb91f3d058f0b4491
+  checksum: ded42cd535d92b7fd09a71c4c67fb067487ef5551cc227bfbf2a1f159a842e4e4acddaef20b955789b8d3b455b9779d036853f4a27ce15007f6364a4d30317ae
   languageName: node
   linkType: hard
 
