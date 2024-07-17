@@ -2014,9 +2014,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.820":
-  version: 1.4.828
-  resolution: "electron-to-chromium@npm:1.4.828"
-  checksum: 5eddb971b6fa849a0279bbcdd026d64cacc77ec68c8c2d9d2776baefac458ec2764b4b65c219fece74fa77d6a9fc426604456ba6e9b865fed57ee6687d5cec71
+  version: 1.4.829
+  resolution: "electron-to-chromium@npm:1.4.829"
+  checksum: e35b34f5ea631dcd92609d1b7277db3f640eb3912e95edc3e238a9cc9c79ff930d353d95c4760b7d64739c607c6a136b05988b6d05a1367e9387b4d002988a3a
   languageName: node
   linkType: hard
 
@@ -3777,9 +3777,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "node-releases@npm:2.0.14"
-  checksum: 59443a2f77acac854c42d321bf1b43dea0aef55cd544c6a686e9816a697300458d4e82239e2d794ea05f7bbbc8a94500332e2d3ac3f11f52e4b16cbe638b3c41
+  version: 2.0.17
+  resolution: "node-releases@npm:2.0.17"
+  checksum: 2fd2969aa75ef6813efaabcec1a3199ef2552e3bba9245d2fc255fefedf819fb1dd3c12767047c1e132c561ad6cc39d954d0da3f6319bb966720bbc1f595058d
   languageName: node
   linkType: hard
 
@@ -4191,11 +4191,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0":
-  version: 7.6.2
-  resolution: "semver@npm:7.6.2"
+  version: 7.6.3
+  resolution: "semver@npm:7.6.3"
   bin:
     semver: bin/semver.js
-  checksum: 40f6a95101e8d854357a644da1b8dd9d93ce786d5c6a77227bc69dbb17bea83d0d1d1d7c4cd5920a6df909f48e8bd8a5909869535007f90278289f2451d0292d
+  checksum: 4110ec5d015c9438f322257b1c51fe30276e5f766a3f64c09edd1d7ea7118ecbc3f379f3b69032bacf13116dc7abc4ad8ce0d7e2bd642e26b0d271b56b61a7d8
   languageName: node
   linkType: hard
 
