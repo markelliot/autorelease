@@ -1561,7 +1561,7 @@ __metadata:
     eslint-plugin-prettier: ^5.2.1
     jest: ^29.7.0
     prettier: ^3.3.3
-    ts-jest: ^29.2.2
+    ts-jest: ^29.2.3
     typescript: ^5.5.3
     typescript-eslint: ^7.16.1
   languageName: unknown
@@ -2002,7 +2002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ejs@npm:^3.0.0":
+"ejs@npm:^3.1.10":
   version: 3.1.10
   resolution: "ejs@npm:3.1.10"
   dependencies:
@@ -2014,9 +2014,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.820":
-  version: 1.4.829
-  resolution: "electron-to-chromium@npm:1.4.829"
-  checksum: e35b34f5ea631dcd92609d1b7277db3f640eb3912e95edc3e238a9cc9c79ff930d353d95c4760b7d64739c607c6a136b05988b6d05a1367e9387b4d002988a3a
+  version: 1.4.830
+  resolution: "electron-to-chromium@npm:1.4.830"
+  checksum: fa9e98baa932a3dc3b24104c346d34459455f8caec9ac8a14630de4399cc05a998e190ddb2eb8b1abcefc08a106246b0fa4b059eae78322441a4c257e3d5455b
   languageName: node
   linkType: hard
 
@@ -2909,8 +2909,8 @@ __metadata:
   linkType: hard
 
 "jake@npm:^10.8.5":
-  version: 10.9.1
-  resolution: "jake@npm:10.9.1"
+  version: 10.9.2
+  resolution: "jake@npm:10.9.2"
   dependencies:
     async: ^3.2.3
     chalk: ^4.0.2
@@ -2918,7 +2918,7 @@ __metadata:
     minimatch: ^3.1.2
   bin:
     jake: bin/cli.js
-  checksum: 49659c156b8ad921af377fb782505ae3cc7e7dd8793695b782070d99b4b66d2688b4e3efb32e09252400bfe6e49a7fb393a3a0959e8e1a51dbda95bcacbb9c36
+  checksum: f2dc4a086b4f58446d02cb9be913c39710d9ea570218d7681bb861f7eeaecab7b458256c946aeaa7e548c5e0686cc293e6435501e4047174a3b6a504dcbfcaae
   languageName: node
   linkType: hard
 
@@ -4499,12 +4499,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.2.2":
-  version: 29.2.2
-  resolution: "ts-jest@npm:29.2.2"
+"ts-jest@npm:^29.2.3":
+  version: 29.2.3
+  resolution: "ts-jest@npm:29.2.3"
   dependencies:
     bs-logger: 0.x
-    ejs: ^3.0.0
+    ejs: ^3.1.10
     fast-json-stable-stringify: 2.x
     jest-util: ^29.0.0
     json5: ^2.2.3
@@ -4532,7 +4532,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: e8e20167ecab9d164215691ea60e946774519fd602809599d1f2abf8321a767310e9ee2cf377a346a3d6de7b8a8ac619180bb0ab06f3813e51f82973f5a94b82
+  checksum: b405fe2f5f9b8aee8ec83520e91ce61a43b3025069dc59809cfbee7255ac1710d694a6bdfecc5bba5f365b9605d0520d62855d0c1bbf0665096e12a71ed3a642
   languageName: node
   linkType: hard
 
