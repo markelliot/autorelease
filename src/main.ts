@@ -111,7 +111,7 @@ export async function work(
         sha: latestCommit,
       });
     } catch (error) {
-      core.error("Failed to create tag:\n${error}");
+      core.error(`Failed to create tag:\n${error}`);
     }
   }
 }
