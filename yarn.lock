@@ -1638,7 +1638,7 @@ __metadata:
     "@types/node": ^20.10.3
     "@vercel/ncc": ^0.38.1
     eslint: ^9.21.0
-    eslint-config-prettier: ^10.0.2
+    eslint-config-prettier: ^10.1.1
     eslint-plugin-prettier: ^5.2.3
     jest: ^29.7.0
     prettier: ^3.5.3
@@ -2082,9 +2082,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.112
-  resolution: "electron-to-chromium@npm:1.5.112"
-  checksum: 626e9e0d919d2e23cb37b20ea9ff916be1b2ef96a4955bdfc18f8203a2c98e66fd9cc62a9d1969291538f4c962201add11cc124ca2cab6cde99360ed7802ef58
+  version: 1.5.113
+  resolution: "electron-to-chromium@npm:1.5.113"
+  checksum: 7339108c6379ce36cf64560d431c42fc4b4fc3ac2ed434aad1730a39bc03fed5273faba3c7aa9387efc361b3732653c16ecdf23e33d8f0c67de378a7a5206cf9
   languageName: node
   linkType: hard
 
@@ -2169,14 +2169,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^10.0.2":
-  version: 10.0.2
-  resolution: "eslint-config-prettier@npm:10.0.2"
+"eslint-config-prettier@npm:^10.1.1":
+  version: 10.1.1
+  resolution: "eslint-config-prettier@npm:10.1.1"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
-    eslint-config-prettier: build/bin/cli.js
-  checksum: 76c30d85b29320c631aafe7e10fa4d065c574d3e5491f7f9c888bfc1351e9ded6b0e0821c4d7b8f49e86b056206c91fb2f5d4b30c8f2c57a6c44fdafa75716c8
+    eslint-config-prettier: bin/cli.js
+  checksum: 1211a973f4b5c3fe4a152ca58e40493c9d51b5145a4dfd6a4606b65e480b43c072d1a9b41b179adeb3aac93b6425b2d05d5e4f696e2447ac833373b4ac707a6b
   languageName: node
   linkType: hard
 
