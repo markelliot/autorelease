@@ -2074,7 +2074,7 @@ __metadata:
     eslint-config-prettier: ^10.1.5
     eslint-plugin-prettier: ^5.5.1
     jest: ^30.0.3
-    prettier: ^3.6.1
+    prettier: ^3.6.2
     ts-jest: ^29.4.0
     typescript: ^5.8.3
     typescript-eslint: ^8.35.0
@@ -2504,9 +2504,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.176
-  resolution: "electron-to-chromium@npm:1.5.176"
-  checksum: 268a5a9b7dfa7ba78b4c25c05e1d71059fc696e772febd5eab3a264112d60da79e64d99e17d641e4ea9defd79a73f42ddc5d464a71ac762d0b2c50bed0042edd
+  version: 1.5.177
+  resolution: "electron-to-chromium@npm:1.5.177"
+  checksum: 7e91acb949967fa607165da13595a6571468d619c50203a77d33ff63ee13efc52d2b99b3a167545195673dc385e580ee4a593d3b893650e63914a293af30b5bb
   languageName: node
   linkType: hard
 
@@ -4514,12 +4514,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.6.1":
-  version: 3.6.1
-  resolution: "prettier@npm:3.6.1"
+"prettier@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "prettier@npm:3.6.2"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 3b487e03078168467c7efed62207cab4fe9da0c304bd5d1c7ab55647fce9f78cc19caf801890d7bb49653b506b098d796277d998722f87eddf8fa5b2c66744b1
+  checksum: 0206f5f437892e8858f298af8850bf9d0ef1c22e21107a213ba56bfb9c2387a2020bfda244a20161d8e3dad40c6b04101609a55d370dece53d0a31893b64f861
   languageName: node
   linkType: hard
 
