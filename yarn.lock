@@ -4237,11 +4237,11 @@ __metadata:
   linkType: hard
 
 "napi-postinstall@npm:^0.2.4":
-  version: 0.2.4
-  resolution: "napi-postinstall@npm:0.2.4"
+  version: 0.2.5
+  resolution: "napi-postinstall@npm:0.2.5"
   bin:
     napi-postinstall: lib/cli.js
-  checksum: a0d07495a42953983bbefdf7bae7aa4114b01e231261bd01869568f4a0147347bf5e921dc0d4f618f93e56d54cc6e0d01f49e8da5d1f353ece019cc56157ab4b
+  checksum: cd91b92cd89ee2c2b6435ee50a4dab1b4aa66261aa6f59c28b11118ade7691204d28c227bcf961ee5881ced5c6ef508c3feec236f7bced84bd62bd180b2ea955
   languageName: node
   linkType: hard
 
