@@ -2504,9 +2504,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.181
-  resolution: "electron-to-chromium@npm:1.5.181"
-  checksum: 4606f8a873bce8b8191c9d83b91567ad25711d11496dca0cbe2bdd91d653315a462028e4461107420084c0092d0094fabab37450eb42fb66bfaf97cb50115c5a
+  version: 1.5.182
+  resolution: "electron-to-chromium@npm:1.5.182"
+  checksum: 7c698db2733aea35cc76b3914af73ee46e4fe47009100a58e18313fca0b1179ddda3c37166354895765a918a2984cec2e18d4652c2f7b51dd76268ca84b718d3
   languageName: node
   linkType: hard
 
@@ -4724,12 +4724,12 @@ __metadata:
   linkType: hard
 
 "socks@npm:^2.8.3":
-  version: 2.8.5
-  resolution: "socks@npm:2.8.5"
+  version: 2.8.6
+  resolution: "socks@npm:2.8.6"
   dependencies:
     ip-address: ^9.0.5
     smart-buffer: ^4.2.0
-  checksum: d39a77a8c91cfacafc75c67dba45925eccfd884a8a4a68dcda6fb9ab7f37de6e250bb6db3721e8a16a066a8e1ebe872d4affc26f3eb763f4befedcc7b733b7ed
+  checksum: 3d2a696d42d94b05b2a7e797b9291483d6768b23300b015353f34f8046cce35f23fe59300a38a77a9f0dee4274dd6c333afbdef628cf48f3df171bfb86c2d21c
   languageName: node
   linkType: hard
 
