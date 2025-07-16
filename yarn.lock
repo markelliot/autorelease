@@ -2514,9 +2514,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.183
-  resolution: "electron-to-chromium@npm:1.5.183"
-  checksum: 236b816d75778223ef0b15bb8840c14d882062868ea3278694cbeefd2fb8f14984f366487e9077cb6309925cf9fa3a7f578c7f6e5ad580e553519fd264010982
+  version: 1.5.185
+  resolution: "electron-to-chromium@npm:1.5.185"
+  checksum: e84e14c116229d38aaa9ba4eae49fe0f8a5e6d67f32fab54e3d2b03f28e9655336c9efac14428001191d8ad79112d745c9dd22a9403cb43ddec707a6ac7782fb
   languageName: node
   linkType: hard
 
@@ -4486,9 +4486,9 @@ __metadata:
   linkType: hard
 
 "picomatch@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "picomatch@npm:4.0.2"
-  checksum: a7a5188c954f82c6585720e9143297ccd0e35ad8072231608086ca950bee672d51b0ef676254af0788205e59bd4e4deb4e7708769226bed725bf13370a7d1464
+  version: 4.0.3
+  resolution: "picomatch@npm:4.0.3"
+  checksum: 6817fb74eb745a71445debe1029768de55fd59a42b75606f478ee1d0dc1aa6e78b711d041a7c9d5550e042642029b7f373dc1a43b224c4b7f12d23436735dba0
   languageName: node
   linkType: hard
 
