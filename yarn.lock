@@ -2140,8 +2140,8 @@ __metadata:
   linkType: hard
 
 "babel-preset-current-node-syntax@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "babel-preset-current-node-syntax@npm:1.1.1"
+  version: 1.2.0
+  resolution: "babel-preset-current-node-syntax@npm:1.2.0"
   dependencies:
     "@babel/plugin-syntax-async-generators": ^7.8.4
     "@babel/plugin-syntax-bigint": ^7.8.3
@@ -2160,7 +2160,7 @@ __metadata:
     "@babel/plugin-syntax-top-level-await": ^7.14.5
   peerDependencies:
     "@babel/core": ^7.0.0 || ^8.0.0-0
-  checksum: d39053d186092d4940fdf3b0ba84a015e11a18963f44039758090ae0f6008eeaf4402e3cb17dad2b34857c8a12a0c6580a483f6c41ad70c0201c1db6239d61d9
+  checksum: 3608fa671cfa46364ea6ec704b8fcdd7514b7b70e6ec09b1199e13ae73ed346c51d5ce2cb6d4d5b295f6a3f2cad1fdeec2308aa9e037002dd7c929194cc838ea
   languageName: node
   linkType: hard
 
@@ -2521,9 +2521,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.192
-  resolution: "electron-to-chromium@npm:1.5.192"
-  checksum: 6d22320d5a946065e7919da8bfb7f47e6a1166239cf63be7ce12f93bbd91d3fec21e6082e39bc1c500d71f851d6d8893ca91e2952225634c122851a87e2dc9d3
+  version: 1.5.193
+  resolution: "electron-to-chromium@npm:1.5.193"
+  checksum: 8fbc2c224a57db5aa1895052014f9d07ee78dca2bdbf9015b34d7964c127c5c87ac498698815f145a44c1d31a6190b01b70200db966fe303e5dc2f744f60aafe
   languageName: node
   linkType: hard
 
