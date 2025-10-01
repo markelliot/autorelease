@@ -1497,9 +1497,9 @@ __metadata:
   linkType: hard
 
 "@octokit/webhooks-types@npm:^7.3.1":
-  version: 7.3.1
-  resolution: "@octokit/webhooks-types@npm:7.3.1"
-  checksum: 10/c4da1e1eb94a90c2e79e158f6e6d935aa099340f7cccac3449feca4cd4e2b5b5b04bbb8414310791d421b3451cd5b0685f498f1bcec6af85d2c14803dae2e1b8
+  version: 7.6.1
+  resolution: "@octokit/webhooks-types@npm:7.6.1"
+  checksum: 10/0b11bd7e8d13b5a9cf14214421298a423d0180a5e1aaaea876ee4db6f97b5cca536f48d89af63105db75419d777a2402733eb0e110002d4dd59581ef36037bdc
   languageName: node
   linkType: hard
 
