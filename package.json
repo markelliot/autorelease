@@ -12,11 +12,11 @@
     "test": "yarn jest --passWithNoTests"
   },
   "devDependencies": {
-    "@eslint/js": "^9.0.0",
+    "@eslint/js": "^10.0.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.0.0",
     "@vercel/ncc": "^0.38.1",
-    "eslint": "^9.32.0",
+    "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
     "jest": "^30.0.5",
