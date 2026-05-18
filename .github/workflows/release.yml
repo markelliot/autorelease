@@ -25,12 +25,12 @@ jobs:
           git config --global user.email "${COMMIT_EMAIL}"
           git config --global user.name "${COMMIT_USER}"
 
-          git add -f action.yml .gitignore dist/index.js dist/index.js.map dist/sourcemap-register.js
+          git add -f action.yml .gitignore dist/index.js dist/index.js.map dist/sourcemap-register.cjs dist/package.json
           git stash --staged
 
           git checkout -f "${BRANCH}"
 
-          git checkout stash -- action.yml .gitignore dist/index.js dist/index.js.map dist/sourcemap-register.js
+          git checkout stash -- action.yml .gitignore dist/index.js dist/index.js.map dist/sourcemap-register.cjs dist/package.json
           git commit --allow-empty -m "${MESSAGE}"
           git push origin "${BRANCH}"
           git tag -f -a "${TAG}" -m "${TAG}"
