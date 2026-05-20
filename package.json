@@ -26,7 +26,7 @@
     "typescript": "^6.0.0",
     "typescript-eslint": "^8.38.0"
   },
-  "packageManager": "yarn@4.14.1",
+  "packageManager": "yarn@4.15.0",
   "dependencies": {
     "@actions/core": "^3.0.0",
     "@actions/github": "^9.0.0",
