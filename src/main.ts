@@ -12,6 +12,7 @@ export async function work(
   octokit: InstanceType<typeof GitHub>,
   maxDays: number,
   tagOnly: boolean,
+  patch: boolean,
   dryRun: boolean,
 ) {
   const context = github.context;
@@ -79,7 +80,9 @@ export async function work(
     return;
   }
 
-  const newTag = `${releaseComponents[1]}${releaseComponents[2]}.${parseInt(releaseComponents[3]) + 1}.0`;
+  const newTag = patch
+    ? `${releaseComponents[1]}${releaseComponents[2]}.${releaseComponents[3]}.${parseInt(releaseComponents[4]) + 1}`
+    : `${releaseComponents[1]}${releaseComponents[2]}.${parseInt(releaseComponents[3]) + 1}.0`;
   if (dryRun) {
     core.info("Running in dryRun mode, skipping release creation.");
     return;
@@ -122,8 +125,9 @@ async function run(): Promise<void> {
     const authToken = core.getInput("github-token");
     const maxDays = parseInt(core.getInput("max-days"));
     const tagOnly = core.getInput("tag-only") === "true";
+    const patch = core.getInput("patch") === "true";
     const octokit = github.getOctokit(authToken);
-    work(octokit, maxDays, tagOnly, false);
+    work(octokit, maxDays, tagOnly, patch, false);
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);
