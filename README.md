@@ -24,6 +24,7 @@ jobs:
           # maximum number of days since last release
           max-days: 7
           # tag-only: true # create a tag instead of a release
+          # patch: true # increment the patch number instead of the minor number
 ```
 
 Note
