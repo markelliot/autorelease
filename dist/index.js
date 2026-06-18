@@ -36284,7 +36284,7 @@ function getOctokit(token, options, ...additionalPlugins) {
 const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
 // compatible with releases of the form <major>.<minor>.<patch>
 const RELEASE_STYLE = /^(?<v>v?)(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$/;
-async function work(octokit, maxDays, tagOnly, dryRun) {
+async function work(octokit, maxDays, tagOnly, patch, dryRun) {
     const context = github_context;
     const latestRelease = await octokit.rest.repos.getLatestRelease({
         ...context.repo,
@@ -36327,7 +36327,9 @@ async function work(octokit, maxDays, tagOnly, dryRun) {
         warning("Skipping release because it has not been long enough between releases");
         return;
     }
-    const newTag = `${releaseComponents[1]}${releaseComponents[2]}.${parseInt(releaseComponents[3]) + 1}.0`;
+    const newTag = patch
+        ? `${releaseComponents[1]}${releaseComponents[2]}.${releaseComponents[3]}.${parseInt(releaseComponents[4]) + 1}`
+        : `${releaseComponents[1]}${releaseComponents[2]}.${parseInt(releaseComponents[3]) + 1}.0`;
     if (dryRun) {
         info("Running in dryRun mode, skipping release creation.");
         return;
@@ -36371,8 +36373,9 @@ async function run() {
         const authToken = getInput("github-token");
         const maxDays = parseInt(getInput("max-days"));
         const tagOnly = getInput("tag-only") === "true";
+        const patch = getInput("patch") === "true";
         const octokit = getOctokit(authToken);
-        work(octokit, maxDays, tagOnly, false);
+        work(octokit, maxDays, tagOnly, patch, false);
     }
     catch (error) {
         if (error instanceof Error) {

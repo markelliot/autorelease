@@ -15,6 +15,10 @@ inputs:
     required: false
     default: false
     description: When true, create a tag instead of a release
+  patch:
+    required: false
+    default: false
+    description: When true, increment the patch number instead of the minor number
 runs:
   using: "node24"
   main: "dist/index.js"
