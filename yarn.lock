@@ -1802,13 +1802,13 @@ __metadata:
   linkType: hard
 
 "@vercel/ncc@npm:^0.44.0":
-  version: 0.44.0
-  resolution: "@vercel/ncc@npm:0.44.0"
+  version: 0.44.1
+  resolution: "@vercel/ncc@npm:0.44.1"
   dependencies:
     node-gyp: "npm:latest"
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 10/6a2a53b5df278b530387cee0644c7cf06aa2ff3aed4b6fc418af6789d3727334e3a0c892283170d80ed3b3919f7ed806f8993df763d1fd05439d962a5b9e4a45
+  checksum: 10/c362588870220b6cb03ca3c773f51eaa2c75f16fe45d7c6e4ba5e83d88b0c13b1b33a5f80e3c64c973478d91a9ca153ced4efd2fe55b501889d54c1563b2eb4d
   languageName: node
   linkType: hard
 
