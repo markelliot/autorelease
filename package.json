@@ -8,23 +8,19 @@
   "scripts": {
     "package": "yarn build && yarn ncc build --source-map",
     "build": "yarn && yarn lint && yarn tsc",
-    "format": "yarn eslint 'src/' --fix && prettier --write 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
-    "lint": "yarn eslint 'src/' && prettier --check 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
+    "format": "yarn oxlint src --fix && prettier --write 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
+    "lint": "yarn oxlint src && prettier --check 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
     "test": "yarn jest --passWithNoTests"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^26.0.0",
     "@vercel/ncc": "^0.45.0",
-    "eslint": "^10.0.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.3",
     "jest": "^30.0.5",
+    "oxlint": "^1.90.0",
     "prettier": "^3.6.2",
     "ts-jest": "^29.4.0",
-    "typescript": "^7.0.0",
-    "typescript-eslint": "^8.38.0"
+    "typescript": "^7.0.0"
   },
   "packageManager": "yarn@4.18.1",
   "dependencies": {
